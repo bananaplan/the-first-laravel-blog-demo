@@ -23,8 +23,3 @@ Route::match(['get', 'post'], 'doregister', 'Front\UserController@doRegister');
 Route::match(['get', 'post'], 'dologin', 'Front\UserController@doLogin');
 
 
-
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
