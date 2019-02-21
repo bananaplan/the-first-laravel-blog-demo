@@ -57,4 +57,10 @@ class UserController extends Controller
 
         return '用户名或密码错误';
     }
+
+    public function logout()
+    {
+        session()->flush();
+        return '用户已退出';
+    }
 }
